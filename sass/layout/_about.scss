@@ -1,13 +1,13 @@
 .about-section {
     padding-top: 95px;
     }
-.about-svg {
+.about-img {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
   } 
-.about-svg-list {
+.about-img__list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,10 +45,10 @@
     display: flex;
     justify-content: space-between;
     }
-.services-list-item {
+.services-list__item {
     position: relative;
 }
-.services-list-description {
+.services-list__description {
     position: absolute;
     bottom: 0;
     left: 0;

@@ -14,16 +14,16 @@
 .navigation {
     margin-left: 95px;
     }
-.nav-list-item {
+.nav-list__item {
     position: relative;
         &:not(:first-child) {
             margin-left: 50px;
             }
 }
-.logo-studio-header {
+.logo__studio-header {
     color: var(--logo-studio-header-color);
     }
-.nav-list-link {
+.nav-list__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -90,7 +90,7 @@
             fill: var(--accent-color);
             }
     }
-.mail-svg,
-.tel-svg {
+.nav-maill-info__svg,
+.nav-tel-info__svg {
     margin-right: 10px;
     }
