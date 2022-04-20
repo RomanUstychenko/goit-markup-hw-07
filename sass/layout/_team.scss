@@ -47,17 +47,19 @@
     height: 44px;
     border-radius: 50%;
     background-color: var(--main-background-color);
-    }
-.team-card-networks-link {
     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            fill: var(--main-background-color);
+            background-color: var(--accent-color);
+            }
     }
-.team-card-networks-link:hover,
-.team-card-networks-link:focus {
-    fill: var(--main-background-color);
-    background-color: var(--accent-color);
-    }
-.team-card-networks-list:not(:first-child) {
-    margin-left: 10px;
-    }
+
+
+.team-card-networks-list {
+        &:not(:first-child) {
+            margin-left: 10px;
+            }
+}

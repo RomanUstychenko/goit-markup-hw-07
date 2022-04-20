@@ -86,8 +86,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: var(--hover-focus-btn-color);
 }
 
@@ -197,6 +196,15 @@ img {
   position: relative;
 }
 
+.contact-form-input-svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contact-form-input {
   width: 100%;
   height: 40px;
@@ -240,15 +248,6 @@ img {
   border-color: var(--accent-color);
 }
 
-.contact-form-input-svg {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .contact-form-checkbox-wrapper {
   margin-bottom: 30px;
 }
@@ -264,22 +263,6 @@ img {
   color: var(--secondary-font-color);
 }
 
-.contact-form-checkbox-link {
-  color: var(--accent-color);
-}
-
-.contact-form-checkbox:focus + .contact-form-checkbox-label::before {
-  outline: 1px solid rgba(0, 0, 255, 0.5);
-}
-
-.contact-form-checkbox:checked + .contact-form-checkbox-label::before {
-  background-image: url("https://romanustychenko.github.io/goit-markup-hw-06/images/tick.png");
-  background-color: var(--accent-color);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border: 0px;
-}
-
 .contact-form-checkbox-label::before {
   display: inline-block;
   content: "";
@@ -290,6 +273,22 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.contact-form-checkbox-link {
+  color: var(--accent-color);
+}
+
+.contact-form-checkbox:focus + .contact-form-checkbox-label::before {
+  outline: 1px solid rgba(0, 0, 255, 0.5);
+}
+
+.contact-form-checkbox:checked + .contact-form-checkbox-label::before {
+  background-image: url("https://romanustychenko.github.io/goit-markup-hw-07/images/tick.png");
+  background-color: var(--accent-color);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 0px;
 }
 
 .contact-form-btn {
@@ -306,9 +305,8 @@ img {
   border: 0;
 }
 
-.contact-form-btn:hover,
-.contact-form-btn:focus {
-  background-color: #188CE8;
+.contact-form-btn:hover, .contact-form-btn:focus {
+  background-color: var(--hover-focus-btn-color);
 }
 
 .header-container {
@@ -339,14 +337,6 @@ img {
   margin-left: 50px;
 }
 
-.nav-maill-info {
-  margin-left: auto;
-}
-
-.nav-tel-info {
-  margin-left: 50px;
-}
-
 .logo-studio-header {
   color: var(--logo-studio-header-color);
 }
@@ -370,13 +360,11 @@ img {
   background-color: var(--accent-color);
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list-link:hover, .nav-list-link:focus {
   color: var(--accent-color);
 }
 
-.nav-list-link:hover::after,
-.nav-list-link:focus::after {
+.nav-list-link:hover::after, .nav-list-link:focus::after {
   display: flex;
   position: absolute;
 }
@@ -396,8 +384,15 @@ img {
   position: absolute;
 }
 
-.nav-maill-info,
+.nav-maill-info, .nav-tel-info {
+  margin-left: auto;
+}
+
 .nav-tel-info {
+  margin-left: 50px;
+}
+
+.nav-maill-info, .nav-tel-info {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -406,10 +401,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-maill-info:hover,
-.nav-maill-info:focus,
-.nav-tel-info:hover,
-.nav-tel-info:focus {
+.nav-maill-info:hover, .nav-tel-info:hover, .nav-maill-info:focus, .nav-tel-info:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.nav-tel-info:hover, .nav-tel-info:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -575,15 +572,11 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: var(--main-background-color);
-}
-
-.team-card-networks-link {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-card-networks-link:hover,
-.team-card-networks-link:focus {
+.team-card-networks-link:hover, .team-card-networks-link:focus {
   fill: var(--main-background-color);
   background-color: var(--accent-color);
 }
@@ -605,15 +598,11 @@ img {
   width: 170px;
   height: 92px;
   border-radius: 4px;
-}
-
-.customers-link {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-link:hover,
-.customers-link:focus {
+.customers-link:hover, .customers-link:focus {
   fill: var(--accent-color);
 }
 
@@ -661,15 +650,11 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-join-list-link {
   fill: var(--main-background-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-join-list-link:hover,
-.footer-join-list-link:focus {
+.footer-join-list-link:hover, .footer-join-list-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -763,8 +748,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-join-btn:hover,
-.footer-join-btn:focus {
+.footer-join-btn:hover, .footer-join-btn:focus {
   background-color: var(--accent-color);
 }
 
@@ -803,8 +787,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:hover, .portfolio-btn:focus {
   color: var(--main-background-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -823,9 +806,12 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-group:hover,
-.portfolio-group:focus {
+.portfolio-group:hover, .portfolio-group:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-group:not(:nth-child(-n+3)) {
+  margin-top: 30px;
 }
 
 .portfolio-border {
@@ -833,10 +819,6 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   border: 1px solid #EEEEEE;
-}
-
-.portfolio-group:not(:nth-child(-n+3)) {
-  margin-top: 30px;
 }
 
 .portfolio-title {
