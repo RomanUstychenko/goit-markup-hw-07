@@ -157,7 +157,7 @@
             outline: 1px solid rgba(0, 0, 255, 0.5);
         }
         &:checked + .contact-form-checkbox-label::before {
-            background-image: url("https://romanustychenko.github.io/goit-markup-hw-07/images/tick.png");
+            background-image: url(../images/tick.png);
             background-color: var(--accent-color);
             background-repeat: no-repeat;
             background-position: 50% 50%;
